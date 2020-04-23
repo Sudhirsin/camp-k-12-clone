@@ -1,3 +1,190 @@
+/* landing page */
+.showcase {
+  background-image: url('/images/landing_page/bg-header.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 775px;
+}
+
+.notification {
+  color: white;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+}
+ 
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  border-radius: 50%;
+  background: #ff677f;
+}
+
+.score {
+  width: 105px;
+  height: 35px;
+  background-color: #71aef3;
+  border-radius: 4px;
+}
+
+.score span {
+  font-size: 20px;
+}
+
+
+.boy-photo {
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+
+.banner p {
+  width: 533px;
+  height: 120px;
+  font-size: 52px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: 0.22px;
+  color: #ffffff;
+}
+
+.banner span {
+  width: 665px;
+  height: 102px;
+  font-size: 20px;
+  line-height: 1.42;
+  letter-spacing: px;
+  font-weight: lighter;
+}
+
+.banner-skill-text {
+  color: #CCC777;
+}
+
+
+/* tech stack card */
+.techstack-arrow {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+ 
+.card-tech-stack {
+  display: flex;
+  flex-direction: column;
+  width: 208px; 
+  height: 228px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-tech-stack p {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  text-align: center;
+  font-weight: lighter;
+  color: grey;
+}
+
+
+/* upcomig coourses */
+.upcoming-courses-container {
+  width: 100%;
+  min-height: 1119px;
+  background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
+  position: relative;
+  top: -60px;
+  z-index: -1;
+}
+
+.online-courses-text {
+  margin-top: 200px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+
+.live-btn {
+  margin-top: 200px;
+  width: 87px;
+  height: 34px;
+  background-color: #de9dff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.live-btn div {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.k {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #777b8c;
+}
+
+.card-backgroud-online {
+  width: 100%;
+  height: 158px;
+  background-image: url('/images/landing_page/android.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-green {
+  background-color: #DFFCF8;
+  padding: 5px;
+  margin-left: 5px;
+  color: #0bc29f;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 12px;
+}
+ 
+.card-yellow {
+  background-color: #FFF4D6;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 12px;
+  color: #F1BD31;
+}
+
+.footer {
+  background-image: linear-gradient(82deg, #207cee -3%, #73caf3 119%);
+  height: 90px;
+  position: relative;
+  top: -120px;
+}
+
+
 /* online course page */
 .course-container {
   background-image: url('/images/header-background.svg');

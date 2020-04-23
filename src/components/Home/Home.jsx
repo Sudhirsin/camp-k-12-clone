@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -8,317 +9,172 @@ function Home() {
       <div className="container-fuild">
 
         {/* background header for online courses */}
-        <div className="course-container">
+        <div className="showcase">
           
           {/* Navbar */}
-          <div className="header">
-            <nav className="navbar navbar-expand-lg">
-              <img
-                className="CampK12-Logo"
-                src="/images/camp-k-12-logo.svg"
-                alt="logo"
-              />
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
+            <Navbar />
 
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
-                  <li className="nav-item">
-                    <a className="nav-link text-white font-weight-ligther" href="#">
-                      ONLINE COURSES <span className="sr-only">(current)</span>
-                    </a>
-                  </li>
-                  <li className="nav-item text-white font-weight-ligther">
-                    <a className="nav-link text-white" href="#">
-                      OFFLINE CAMPS
-                    </a>
-                  </li>
-
-                  <li className="nav-item text-white font-weight-ligther">
-                    <a className="nav-link text-white" href="#">
-                      REFER & EARN
-                    </a>
-                  </li>
-                </ul>
-                <form className="form-inline my-2 my-lg-0">
-                  <img className="mx-2" src="/images/leaderboard.svg" alt="" />
-                  <button className="btn navbar-btn mx-2 text-white">
-                    FREE TRAIL
-                  </button>
-                  <button className="btn navbar-btn mx-2 text-white">LOGIN</button>
-                </form>
+          {/* banner  */}
+          <div className="container banner mt-5">
+            <div className="d-flex justify-content-between">
+              <div>
+                <p>Welcome to the <br />
+                  school of the future.
+                </p>
+                <br />
+                <br />
+                <span className="text-white">Cutting-edge technology courses for Ages 8-18. <br />
+                    Unlock <span className="banner-skill-text">21st century skills, </span>earn <img src="/images/landing_page/coins.svg" alt="coins icon"/>, and build <br />
+                    a college-ready portfolio as you learn.
+                </span>
               </div>
-            </nav>
+              <div>
+                <img className="boy-photo" src="/images/landing_page/header-photo.jpg" alt="Boys Image"/>
+              </div>
+            </div>
           </div>
-          {/* Navbar */}
 
-          {/* online course heading  */}
-          <div className="container">
-              <h3 className="text-white online-courses">ONLINE COURSES</h3>
-              <div className="row py-4">
-                  <div className="col-lg">
-                    <img className="mb-3" src="/images/woman.svg" alt="woman"/>
-                    <h6 className="font-weight-bold text-white">Learn interactively.</h6>
-                    <small className="text-white online-classes">LIVE online session with our <br />
-                      expert mentors. See a demo
-                    </small>
-                  </div>
-
-                  <div className="col-lg">
-                    <img className="mb-3" src="/images/learn-from-anywhere.svg" alt="Learn from anywhere"/>
-                    <h6 className="font-weight-bold text-white">Learn from anywhere.</h6>
-                    <small className="text-white online-classes">Convenience and safety for you<br />
-                      and your child
-                    </small>
-                  </div>
-
-                  <div className="col-lg">
-                    <img className="mb-3" src="/images/learn-from-pioneers.svg" alt="Learn by doing"/>
-                    <h6 className="font-weight-bold text-white">Learn Learn from the pioneers.</h6>
-                    <small className="text-white online-classes">We'hv been teaching kids to <br />
-                      code since 2010.  
-                      <Link className="text-white">
-                        <u>Read More</u>
-                      </Link>
-                    </small>
-                  </div>
-
-                  <div className="col-lg">
-                    <img className="mb-3" src="/images/learn-by-doing.svg" alt="Learn by doing"/>
-                    <h6 className="font-weight-bold text-white">Learn by doing.</h6>
-                    <small className="text-white online-classes">100% project-based curriculum.<br />
-                      Solve real-world problems
-                    </small>
-                  </div>
-              </div>
-              <div className="row mt-3">
-                <div className="col-g">
-                  <button className="btn free-trail-btn text-white">
-                    <small>
-                      BOOK A FREE TRAIL
-                    </small>
-                  </button>
+          {/* tech stack */}
+          <div className="container mt-5 pt-3">
+            <h3 className="text-center text-white">What do you want to learn?</h3>
+            <div className="row my-5 pt-2">
+              <div className="col-lg d-flex justify-content-center align-items-center">
+                <div className="techstack-arrow">
+                  <img src="/images/landing_page/arrow-left.svg" alt="Arrow Left"/>
                 </div>
               </div>
+              <div className="col-lg mx-2 card-tech-stack bg-white">
+                <img src="images/landing_page/web-development.svg" alt="Web Development"/>
+                <p className="tex-dark mt-4 font-weight-light">Web Development</p>
+              </div>
+
+              <div className="col-lg mx-2 card-tech-stack bg-white">
+                <img src="images/landing_page/mobile-app.svg" alt="Mobile App Development"/>
+                <p className="tex-dark mt-4 font-weight-light">Mobile App Development</p>
+              </div>
+
+              <div className="col-lg mx-2 card-tech-stack bg-white">
+                <img src="images/landing_page/ar-vr.svg" alt="Mobile Reality"/>
+                <p className="tex-dark mt-4 font-weight-light">Mobile Reality (AR / VR)</p>
+              </div>
+
+              <div className="col-lg mx-2 card-tech-stack bg-white">
+                <img src="images/landing_page/machine-learning.svg" alt="Machine Learning"/>
+                <p className="mt-4 font-weight-light">Machine Learning (AI)</p>
+              </div>
+              <div className="col-lg col-lg d-flex justify-content-center align-items-center">
+                <div className="techstack-arrow">
+                  <img src="/images/landing_page/arrow-right.svg" alt="Arrow Right"/>
+                </div>
+              </div>
+            </div>
           </div>
+          {/* tech stack end */}
+
+
         </div>
       </div>
 
-      {/* card main container */}
-      <div className="container-fluid card-container">
-        <div className="container bg-white p-5 position-relative card-area">
-          
-          <div className="row position-absolute grades-btn">
-            <div className="btn-group shadow" role="group" aria-label="Basic example">
-              <button class="btn bg-white grades text-dark font-weight-light">Grades 1 - 4</button>
-              <button class="btn btn-primary grades font-weight-light">Grades 5 - 8</button>
-              <button class="btn bg-white grades text-dark font-weight-light">Grades 9 - 12</button>
+      {/* upcoming online courses */}
+      <div className="upcoming-courses-container fluid-container">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 d-flex justify-content-center align-items-center">
+              <div className="online-courses-text">Upcoming online courses</div>
+              <div className="badge live-btn ml-4">
+                  <div></div>
+                  LIVE
+                </div> 
+            </div>
+
+            <div className="col-lg-12 mt-2">
+              <p className="k">Learn from live teachers, not pre-recorded videos, in our intelligent virtual classrooms <br />
+              <img src="/images/landing_page/shield.svg" alt="Shield"/> = 21st century skills you'll unlock &nbsp; &nbsp; &nbsp; <img src="/images/landing_page/small-coin.svg" alt="Coins"/> = coins you'll earn for completion
+              </p>
             </div>
           </div>
-          
-          <div className="d-flex justify-content-between mb-3">
-            <p className="course-grade-text">
-              Showing <b>All</b> courses for <b>Grades 5 - 8</b> 
-            </p>
-            <div>
-              <select className="form-control filter-grades">
-                <option className="course-grade-text">All Courses</option>
-              </select>
+        </div>
+
+        {/* online courses card section */}
+        <div className="container">
+          <div className="row">
+            <div className="col-lg mx-5">
+              <div class="card" style={{width: "288px", height:"575px"}}>
+                <div className="card-backgroud-online"></div>
+                <div class="card-body">
+                  <h6 class="card-title font-weight-bold">Android App Development<br />
+                    Level 1
+                  </h6>
+                  <hr />
+                  <div className="d-flex justify-content-between">
+                    <div>
+                      <img src="/images/landing_page/grades.svg" alt="Grades"/>
+                      <span className="text-muted small ml-2">GRADES</span>
+                      <br />
+                      <span className="small ml-4"><b>4 - 8</b></span>
+                    </div>
+                    <div>
+                      <img src="/images/landing_page/pre-req.svg" alt="Pre Req"/>
+                      <span className="text-muted small ml-2">PRE-REQ </span>
+                      <br />
+                      <span className="small ml-4"><b>Yes</b></span>
+                    </div>
+                  </div>
+                  
+                  <hr />
+                  <div>
+                    <img src="/images/landing_page/skill-icon.svg" alt="Skill Icon"/>
+                    <span className="card-green">ANDROID</span> <span className="card-green">UI/UX</span> <span className="card-green">+4</span>
+                  </div>
+                  <div className="mt-2">
+                    <img src="/images/landing_page/small-coin.svg" alt="Coin"/>
+                    <span className="card-yellow">+1000</span>
+                  </div>
+
+                  <hr />
+                  <div className="card-mid-text">
+                    
+                    {/* Happy Student */}
+                    <img className="mr-3" src="/images/landing_page/calender.svg" alt="Happy student path"/>
+                    <span className="text-muted"> 17th Feb (in 4 days)</span>
+                    <br />
+
+                    {/* session hours */}
+                    <img className="mr-4" src="/images/landing_page/days-icon.svg" alt="Happy student path"/>
+                    <span className="text-muted"> Mon, Tue & Wed</span>
+                    <br />
+
+                    {/*  weekend batches*/}
+                    <img className="mr-3" src="/images/landing_page/time.svg" alt="Happy student path"/>
+                    <span className="text-muted"> 6:00PM to 7:00PM</span>
+                  </div>
+
+                  <hr />
+                  <div className="text-center learn-more-link d-flex justify-content-between">
+                    <div className="font-weight-bold">Rs. 6,000</div>
+                    <div>
+                      <Link className="text-center">ENROLL</Link>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
             </div>
+            <div className="col-lg"></div>
+            <div className="col-lg"></div>
           </div>
+        </div>
 
-          {/* showing cards */}
-          <div className="d-flex justify-content-between">
-            {/* card -1 */}
-            <div>
-              <div class="card" style={{width: "330px", height: "450px"}}>
-                <div className="card-backgroud"></div>
-                <div class="card-body">
-                  <h6 class="card-title font-weight-bold">Al & Machine Learning:<br />
-                    Code Intelligent Bots
-                  </h6>
-                  <div className="small">
-                    <span className="text-muted small">LEVEL</span>  <b>&nbsp;1</b>
-                    <span className="text-muted small ml-4">GRADES </span> <b>  &nbsp;5 - 8</b>  
-                  </div>
-                  
-                  <hr />
-                  <div className="card-mid-text">
-                    
-                    {/* Happy Student */}
-                    <img className="mr-3" src="/images/path-happy-student.svg" alt="Happy student path"/>
-                    <b>5.6k</b>
-                    <span className="text-muted"> Happy Students </span>
-                    <br />
+      </div>
 
-                    {/* session hours */}
-                    <img className="mr-4" src="/images/session-hours.svg" alt="Happy student path"/>
-                    <b>12 Hours</b>
-                    <span className="text-muted"> over 6 Sessions</span>
-                    <br />
-
-                    {/*  weekend batches*/}
-                    <img className="mr-3" src="/images/group.svg" alt="Happy student path"/>
-                    <span className="text-muted"> Weekend and Weekdays Batches</span>
-                  </div>
-
-                  <div className="d-flex justify-content-between my-3">
-                    <div>
-                      <img src="/images/rupees-icon.svg" alt="Rupees Icon"/>
-                      <span>
-                        <b className="ml-2">9999</b>
-                        <del className="text-muted small ml-2">12000</del>
-                      </span>
-                    </div>
-                    <div>
-                      <img src="/images/offers-percentage.svg" alt="Offers"/>
-                      <span className="course-grade-text ml-2 offer-text">
-                        16% off
-                      </span>
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div className="text-center learn-more-link">
-                    <Link className="text-center">LEARN MORE</Link>
-
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-
-            {/* card -2 */}
-            <div>
-              <div class="card" style={{width: "330px", height: "450px"}}>
-                <div className="card-backgroud"></div>
-                <div class="card-body">
-                  <h6 class="card-title font-weight-bold">Al & Machine Learning:<br />
-                    Code Intelligent Bots
-                  </h6>
-                  <div className="small">
-                    <span className="text-muted small">LEVEL</span>  <b>&nbsp;1</b>
-                    <span className="text-muted small ml-4">GRADES </span> <b>  &nbsp;5 - 8</b>  
-                  </div>
-                  
-                  <hr />
-                  <div className="card-mid-text">
-                    
-                    {/* Happy Student */}
-                    <img className="mr-3" src="/images/path-happy-student.svg" alt="Happy student path"/>
-                    <b>5.6k</b>
-                    <span className="text-muted"> Happy Students </span>
-                    <br />
-
-                    {/* session hours */}
-                    <img className="mr-4" src="/images/session-hours.svg" alt="Happy student path"/>
-                    <b>12 Hours</b>
-                    <span className="text-muted"> over 6 Sessions</span>
-                    <br />
-
-                    {/*  weekend batches*/}
-                    <img className="mr-3" src="/images/group.svg" alt="Happy student path"/>
-                    <span className="text-muted"> Weekend and Weekdays Batches</span>
-                  </div>
-
-                  <div className="d-flex justify-content-between my-3">
-                    <div>
-                      <img src="/images/rupees-icon.svg" alt="Rupees Icon"/>
-                      <span>
-                        <b className="ml-2">9999</b>
-                        <del className="text-muted small ml-2">12000</del>
-                      </span>
-                    </div>
-                    <div>
-                      <img src="/images/offers-percentage.svg" alt="Offers"/>
-                      <span className="course-grade-text ml-2 offer-text">
-                        16% off
-                      </span>
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div className="text-center learn-more-link">
-                    <Link className="text-center">LEARN MORE</Link>
-
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-
-            {/* card -3 */}
-            <div>
-              <div class="card" style={{width: "330px", height: "450px"}}>
-                <div className="card-backgroud"></div>
-                <div class="card-body">
-                  <h6 class="card-title font-weight-bold">Al & Machine Learning:<br />
-                    Code Intelligent Bots
-                  </h6>
-                  <div className="small">
-                    <span className="text-muted small">LEVEL</span>  <b>&nbsp;1</b>
-                    <span className="text-muted small ml-4">GRADES </span> <b>  &nbsp;5 - 8</b>  
-                  </div>
-                  
-                  <hr />
-                  <div className="card-mid-text">
-                    
-                    {/* Happy Student */}
-                    <img className="mr-3" src="/images/path-happy-student.svg" alt="Happy student path"/>
-                    <b>5.6k</b>
-                    <span className="text-muted"> Happy Students </span>
-                    <br />
-
-                    {/* session hours */}
-                    <img className="mr-4" src="/images/session-hours.svg" alt="Happy student path"/>
-                    <b>12 Hours</b>
-                    <span className="text-muted"> over 6 Sessions</span>
-                    <br />
-
-                    {/*  weekend batches*/}
-                    <img className="mr-3" src="/images/group.svg" alt="Happy student path"/>
-                    <span className="text-muted"> Weekend and Weekdays Batches</span>
-                  </div>
-
-                  <div className="d-flex justify-content-between my-3">
-                    <div>
-                      <img src="/images/rupees-icon.svg" alt="Rupees Icon"/>
-                      <span>
-                        <b className="ml-2">9999</b>
-                        <del className="text-muted small ml-2">12000</del>
-                      </span>
-                    </div>
-                    <div>
-                      <img src="/images/offers-percentage.svg" alt="Offers"/>
-                      <span className="course-grade-text ml-2 offer-text">
-                        16% off
-                      </span>
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div className="text-center learn-more-link">
-                    <Link className="text-center">LEARN MORE</Link>
-
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-           
+      <div className="container-fluid footer">
+        <div className="d-flex justify-content-center align-items-center">
+          <div className="text-white">
+           Question? Contact us at <b>info@campk12.com</b>
           </div>
         </div>
       </div>
-
     </React.Fragment>
   );
 }

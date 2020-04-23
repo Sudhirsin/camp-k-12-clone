@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108" height="108" viewBox="0 0 108 108">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFE9EB"/>
+        </linearGradient>
+        <circle id="b" cx="54" cy="54" r="54"/>
+        <filter id="c" width="101.9%" height="101.9%" x="-.9%" y="-.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation=".5"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 1 0 0 0 0 0.925490196 0 0 0 0 0.929411765 0 0 0 1 0"/>
+        </filter>
+        <filter id="d" width="175%" height="144.4%" x="-37.5%" y="-22.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="e" x1="59.659%" x2="59.659%" y1="125.746%" y2="-22.781%">
+            <stop offset="0%" stop-color="#FFD9CE"/>
+            <stop offset="100%" stop-color="#F5B3BA"/>
+        </linearGradient>
+        <linearGradient id="f" x1="45.336%" x2="45.336%" y1="55.084%" y2="128.908%">
+            <stop offset="0%" stop-color="#FF8968"/>
+            <stop offset="100%" stop-color="#FF5B8A"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use fill="url(#a)" xlink:href="#b"/>
+            <use fill="#000" filter="url(#c)" xlink:href="#b"/>
+        </g>
+        <g filter="url(#d)" transform="translate(37 27)">
+            <path fill="url(#e)" d="M8 1.544h17a5 5 0 0 1 5 5v40.348a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V6.544a5 5 0 0 1 5-5z"/>
+            <path fill="url(#f)" d="M28.57 49.022c-.002.747-.59 1.351-1.316 1.351H4.882c-.723-.003-1.308-.606-1.311-1.35V4.723c.003-.745.588-1.348 1.31-1.35h2.21c.01 1.88 1.49 3.401 3.316 3.404H21.73c1.828 0 3.311-1.521 3.32-3.405h2.205c.723.003 1.309.606 1.311 1.351l.006 44.298zm2.813-45.534A3.131 3.131 0 0 0 28.24.373H3.901C2.17.377.767 1.77.764 3.488v5.497a.587.587 0 0 0-.501.55v1.628a.587.587 0 0 0 .5.55v1.241a.586.586 0 0 0-.5.586v5.333a.587.587 0 0 0 .5.55v1.382a.587.587 0 0 0-.5.55v5.363a.587.587 0 0 0 .5.55v22.68c.004 1.72 1.406 3.112 3.136 3.115h24.341a3.131 3.131 0 0 0 3.136-3.114v-29.39a.587.587 0 0 0 .5-.55v-7.997a.587.587 0 0 0-.494-.556V3.488z"/>
+            <rect width="8" height="2" x="12.378" y="3" fill="#FFF" rx="1"/>
+            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M6.732 16.18l18.288.255M6.732 23.77l18.288.254M6.732 31.358l18.288.255"/>
+            </g>
+        </g>
+    </g>
+</svg>
