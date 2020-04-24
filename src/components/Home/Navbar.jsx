@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -23,6 +24,16 @@ function Navbar() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link 
+                  to = "/onlineCourses"
+                  className="nav-link text-white font-weight-ligther">
+                  ONLINE COURSES <span className="sr-only">(current)</span>
+                </Link>
+              </li>
+            </ul>
+
             <form className="form-inline my-2 my-lg-0 ml-auto">
               <img
                 className="mx-2"

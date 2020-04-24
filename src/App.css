@@ -101,7 +101,7 @@
 /* upcomig coourses */
 .upcoming-courses-container {
   width: 100%;
-  min-height: 1119px;
+  min-height: 1000px;
   background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
   position: relative;
   top: -60px;
@@ -181,7 +181,7 @@
   background-image: linear-gradient(82deg, #207cee -3%, #73caf3 119%);
   height: 90px;
   position: relative;
-  top: -120px;
+  top: -60px;
 }
 
 
